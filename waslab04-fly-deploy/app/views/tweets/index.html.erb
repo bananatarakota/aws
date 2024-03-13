@@ -1,0 +1,49 @@
+<%= stylesheet_link_tag "wot.css" %>
+<html>
+<head>
+    <title>Waslab04</title>
+</head>
+
+<body class="wotbody">
+  <h1 class="wottitle">Wall of Tweets</h1>
+  <br/>
+  <div class="walltweet">
+    <%= render 'form', tweet: @tweet %>
+  </div>
+  <br/>
+  
+  <% if notice %>
+    <br>
+    <div class="wotitem" id="notice">
+      <% if notice[0] != "!" %>
+        <span style="color: red;">
+      	  <%= notice %>
+        </span>
+      <% else %>
+        <span style="color: green;">
+          <% notice.slice!(0) %>
+        	<%= notice %>
+        </span>
+      <% end %>
+    </div>
+  <% end %>
+  
+  <br>
+  <div>
+    <% @actual_day = "" %>
+    <% @tweets.each do |tweet| %>
+      <% @tweeet_day = tweet.created_at.strftime("%A, %B %d, %Y") %>
+      <% if @tweeet_day != @actual_day %>
+        <h3>
+  	      ......
+  	      <%= @actual_day = @tweeet_day %>
+        </h3>
+      <% end %>
+      <%= render tweet %>
+    <% end %>
+  </div>
+</body>
+</html>
+
+
+
