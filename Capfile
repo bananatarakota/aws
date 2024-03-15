@@ -6,10 +6,10 @@ require "capistrano/deploy"
 
 # Load the SCM plugin appropriate to your project:
 #
-# require "capistrano/scm/hg"
+ require "capistrano/scm/hg"
 # install_plugin Capistrano::SCM::Hg
 # or
-# require "capistrano/scm/svn"
+ require "capistrano/scm/svn"
 # install_plugin Capistrano::SCM::Svn
 # or
 require "capistrano/scm/git"
@@ -46,5 +46,8 @@ require "capistrano/bundler"
 require "capistrano/rails/assets"
 require "capistrano/rails/migrations"
 require "capistrano/passenger"
-require 'capistrano/figaro_yml'
+#require 'capistrano/figaro_yml'
+require 'capistrano3-puma'
+  #  install_plugin Capistrano::Puma  # Default puma tasks
+   # install_plugin Capistrano::Puma::Systemd
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }

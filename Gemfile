@@ -51,10 +51,14 @@ gem 'capistrano-bundler'
 gem 'capistrano-passenger', '>= 0.1.1'
 gem 'capistrano-rails'
 gem 'capistrano-rvm'
-gem 'capistrano-figaro-yml', '~> 1.0.2'
+#gem 'capistrano-figaro-yml', '~> 1.0.2'
 
 gem "bcrypt_pbkdf", require: false
 gem "ed25519", require: false
+gem 'capistrano3-puma', github: "seuros/capistrano-puma"
+gem "dotenv"
+
+
 
 # 'pundit', '~> 2.3.1'
 gem 'pundit', git: 'https://github.com/varvet/pundit.git', ref: '5b22078'
