@@ -61,9 +61,9 @@
 #   }
 
 
-role :app, %w{deploy_user@18.212.95.183}
-role :web,  %w{deploy_user@18.212.95.183}
-role :db,  %w{deploy_user@18.212.95.183}
+role :app, %w{deploy_user@3.84.114.120}
+role :web,  %w{deploy_user@3.84.114.120}
+role :db,  %w{deploy_user@3.84.114.120}
 set :ssh_options, {
    keys: %w(~/.ssh/deploy_key.pem),
    forward_agent: false,

@@ -361,3 +361,8 @@
  DEBUG [5e527e1f] 	tar: 
  DEBUG [5e527e1f] 	Exiting with failure status due to previous errors
  DEBUG [5e527e1f] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 06:30:04 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0ffd2076] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [0ffd2076] Command: /usr/bin/env which passenger
