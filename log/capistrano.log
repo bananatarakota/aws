@@ -2415,3 +2415,607 @@ Sprockets::ArgumentError: link_tree argument must be a directory (Sprockets::Arg
 /var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `block in create_worker'
 Tasks: TOP => assets:precompile
 (See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 07:06:55 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c063e7c8] Running /usr/bin/env which passenger as deploy_user@3.84.114.120
+ DEBUG [c063e7c8] Command: /usr/bin/env which passenger
+ DEBUG [c063e7c8] 	/usr/bin/passenger
+ DEBUG [c063e7c8] Finished in 0.710 seconds with exit status 0 (successful).
+ DEBUG [cefa1b1d] Running [ -d ~/.rvm ] as deploy_user@3.84.114.120
+ DEBUG [cefa1b1d] Command: [ -d ~/.rvm ]
+ DEBUG [cefa1b1d] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [27bf590a] Running [ -d /usr/local/rvm ] as deploy_user@3.84.114.120
+ DEBUG [27bf590a] Command: [ -d /usr/local/rvm ]
+ DEBUG [27bf590a] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [c99b011e] Running /usr/local/rvm/bin/rvm version as deploy_user@3.84.114.120
+ DEBUG [c99b011e] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [c99b011e] 	rvm 1.29.12 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [c99b011e] Finished in 0.254 seconds with exit status 0 (successful).
+ DEBUG [67bb12e1] Running /usr/local/rvm/bin/rvm current as deploy_user@3.84.114.120
+ DEBUG [67bb12e1] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [67bb12e1] 	ruby-3.2.2
+ DEBUG [67bb12e1] Finished in 0.249 seconds with exit status 0 (successful).
+ DEBUG [8127356b] Running /usr/local/rvm/bin/rvm 3.2.2 do ruby --version as deploy_user@3.84.114.120
+ DEBUG [8127356b] Command: /usr/local/rvm/bin/rvm 3.2.2 do ruby --version
+ DEBUG [8127356b] 	ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x86_64-linux]
+ DEBUG [8127356b] Finished in 0.414 seconds with exit status 0 (successful).
+  INFO [3ba492e2] Running /usr/bin/env mkdir -p /tmp as deploy_user@3.84.114.120
+ DEBUG [3ba492e2] Command: /usr/bin/env mkdir -p /tmp
+  INFO [3ba492e2] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bb9e262c95970984b94c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bb9e262c95970984b94c.sh 100.0%
+  INFO [55be3756] Running /usr/bin/env chmod 700 /tmp/git-ssh-bb9e262c95970984b94c.sh as deploy_user@3.84.114.120
+ DEBUG [55be3756] Command: /usr/bin/env chmod 700 /tmp/git-ssh-bb9e262c95970984b94c.sh
+  INFO [55be3756] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [453a3b84] Running /usr/bin/env mkdir -p /tmp as deploy_user@3.84.114.120
+ DEBUG [453a3b84] Command: /usr/bin/env mkdir -p /tmp
+  INFO [453a3b84] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bb9e262c95970984b94c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bb9e262c95970984b94c.sh 100.0%
+  INFO [3fb3d690] Running /usr/bin/env chmod 700 /tmp/git-ssh-bb9e262c95970984b94c.sh as deploy_user@3.84.114.120
+ DEBUG [3fb3d690] Command: /usr/bin/env chmod 700 /tmp/git-ssh-bb9e262c95970984b94c.sh
+  INFO [3fb3d690] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [2ef541f8] Running /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD as deploy_user@3.84.114.120
+ DEBUG [2ef541f8] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bb9e262c95970984b94c.sh" ; /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD )
+ DEBUG [2ef541f8] 	cfff9a468fa73af159756b43141b85b62b8ce9d5	HEAD
+  INFO [2ef541f8] Finished in 0.328 seconds with exit status 0 (successful).
+  INFO [21dec478] Running /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD as deploy_user@3.84.114.120
+ DEBUG [21dec478] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bb9e262c95970984b94c.sh" ; /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD )
+ DEBUG [21dec478] 	cfff9a468fa73af159756b43141b85b62b8ce9d5	HEAD
+  INFO [21dec478] Finished in 0.343 seconds with exit status 0 (successful).
+  INFO [1f95350d] Running /usr/bin/env mkdir -p /var/www/hello_world/shared /var/www/hello_world/releases as deploy_user@3.84.114.120
+ DEBUG [1f95350d] Command: /usr/bin/env mkdir -p /var/www/hello_world/shared /var/www/hello_world/releases
+  INFO [1f95350d] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [e18232ae] Running /usr/bin/env mkdir -p /var/www/hello_world/shared/log /var/www/hello_world/shared/tmp/pids /var/www/hello_world/shared/tmp/cache /var/www/hello_world/shared/tmp/sockets /var/www/hello_world/shared/vendor/bundle /var/www/hello_world/shared/public/system /var/www/hello_world/shared/public/uploads /var/www/hello_world/shared/public/assets as deploy_user@3.84.114.120
+ DEBUG [e18232ae] Command: /usr/bin/env mkdir -p /var/www/hello_world/shared/log /var/www/hello_world/shared/tmp/pids /var/www/hello_world/shared/tmp/cache /var/www/hello_world/shared/tmp/sockets /var/www/hello_world/shared/vendor/bundle /var/www/hello_world/shared/public/system /var/www/hello_world/shared/public/uploads /var/www/hello_world/shared/public/assets
+  INFO [e18232ae] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [21772870] Running [ -f /var/www/hello_world/current/REVISION ] as deploy_user@3.84.114.120
+ DEBUG [21772870] Command: [ -f /var/www/hello_world/current/REVISION ]
+ DEBUG [21772870] Finished in 0.049 seconds with exit status 1 (failed).
+ DEBUG [7c6ee949] Running [ -f /var/www/hello_world/repo/HEAD ] as deploy_user@3.84.114.120
+ DEBUG [7c6ee949] Command: [ -f /var/www/hello_world/repo/HEAD ]
+ DEBUG [7c6ee949] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/hello_world/repo
+ DEBUG [1194b6f0] Running [ -f /var/www/hello_world/repo/HEAD ] as deploy_user@3.84.114.120
+ DEBUG [1194b6f0] Command: [ -f /var/www/hello_world/repo/HEAD ]
+ DEBUG [1194b6f0] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/hello_world/repo
+ DEBUG [109ae421] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [109ae421] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [109ae421] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [16a82c34] Running /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git as deploy_user@3.84.114.120
+ DEBUG [16a82c34] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bb9e262c95970984b94c.sh" ; /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git )
+  INFO [16a82c34] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [16885892] Running /usr/bin/env git remote update --prune as deploy_user@3.84.114.120
+ DEBUG [16885892] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bb9e262c95970984b94c.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [16885892] 	Fetching origin
+ DEBUG [16885892] 	From github.com:bananatarakota/aws
+   bf102b8..616299a  master     -> master
+  INFO [16885892] Finished in 0.432 seconds with exit status 0 (successful).
+ DEBUG [7aaf8220] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [7aaf8220] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [7aaf8220] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [770165ce] Running /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git as deploy_user@3.84.114.120
+ DEBUG [770165ce] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bb9e262c95970984b94c.sh" ; /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git )
+  INFO [770165ce] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [cb056c2f] Running /usr/bin/env git remote update --prune as deploy_user@3.84.114.120
+ DEBUG [cb056c2f] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bb9e262c95970984b94c.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [cb056c2f] 	Fetching origin
+  INFO [cb056c2f] Finished in 0.331 seconds with exit status 0 (successful).
+ DEBUG [0111451c] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [0111451c] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [0111451c] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [7f0c851f] Running /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070658 as deploy_user@3.84.114.120
+ DEBUG [7f0c851f] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bb9e262c95970984b94c.sh" ; /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070658 )
+  INFO [7f0c851f] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [cbf19ecf] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/hello_world/releases/20240315070658 as deploy_user@3.84.114.120
+ DEBUG [cbf19ecf] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bb9e262c95970984b94c.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/hello_world/releases/20240315070658 )
+  INFO [cbf19ecf] Finished in 0.281 seconds with exit status 0 (successful).
+ DEBUG [d87265d4] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [d87265d4] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [d87265d4] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [d387a33a] Running /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070658 as deploy_user@3.84.114.120
+ DEBUG [d387a33a] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bb9e262c95970984b94c.sh" ; /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070658 )
+  INFO [d387a33a] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [299000c9] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/hello_world/releases/20240315070658 as deploy_user@3.84.114.120
+ DEBUG [299000c9] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bb9e262c95970984b94c.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/hello_world/releases/20240315070658 )
+  INFO [299000c9] Finished in 0.314 seconds with exit status 0 (successful).
+ DEBUG [8b29fddf] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [8b29fddf] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [8b29fddf] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [355a47d5] Running /usr/bin/env git rev-list --max-count=1 master as deploy_user@3.84.114.120
+ DEBUG [355a47d5] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bb9e262c95970984b94c.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [355a47d5] 	616299a1fb2cb954c659d9c53a2ad91ae5f32784
+ DEBUG [355a47d5] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [48995ebf] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [48995ebf] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [48995ebf] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [2d32d217] Running /usr/bin/env git rev-list --max-count=1 master as deploy_user@3.84.114.120
+ DEBUG [2d32d217] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bb9e262c95970984b94c.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [2d32d217] 	616299a1fb2cb954c659d9c53a2ad91ae5f32784
+ DEBUG [2d32d217] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [0cb46b1a] Running if test ! -d /var/www/hello_world/releases/20240315070658; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070658'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [0cb46b1a] Command: if test ! -d /var/www/hello_world/releases/20240315070658; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070658'" 1>&2; false; fi
+ DEBUG [0cb46b1a] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [5d36667c] Running /usr/bin/env echo "616299a1fb2cb954c659d9c53a2ad91ae5f32784" > REVISION as deploy_user@3.84.114.120
+ DEBUG [5d36667c] Command: cd /var/www/hello_world/releases/20240315070658 && /usr/bin/env echo "616299a1fb2cb954c659d9c53a2ad91ae5f32784" > REVISION
+  INFO [5d36667c] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [816a2f24] Running /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070658/config as deploy_user@3.84.114.120
+ DEBUG [816a2f24] Command: /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070658/config
+  INFO [816a2f24] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [c84e3f76] Running [ -L /var/www/hello_world/releases/20240315070658/config/application.yml ] as deploy_user@3.84.114.120
+ DEBUG [c84e3f76] Command: [ -L /var/www/hello_world/releases/20240315070658/config/application.yml ]
+ DEBUG [c84e3f76] Finished in 0.050 seconds with exit status 1 (failed).
+ DEBUG [6b11ab88] Running [ -f /var/www/hello_world/releases/20240315070658/config/application.yml ] as deploy_user@3.84.114.120
+ DEBUG [6b11ab88] Command: [ -f /var/www/hello_world/releases/20240315070658/config/application.yml ]
+ DEBUG [6b11ab88] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [2cf6049b] Running /usr/bin/env rm /var/www/hello_world/releases/20240315070658/config/application.yml as deploy_user@3.84.114.120
+ DEBUG [2cf6049b] Command: /usr/bin/env rm /var/www/hello_world/releases/20240315070658/config/application.yml
+  INFO [2cf6049b] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [01eee36b] Running /usr/bin/env ln -s /var/www/hello_world/shared/config/application.yml /var/www/hello_world/releases/20240315070658/config/application.yml as deploy_user@3.84.114.120
+ DEBUG [01eee36b] Command: /usr/bin/env ln -s /var/www/hello_world/shared/config/application.yml /var/www/hello_world/releases/20240315070658/config/application.yml
+  INFO [01eee36b] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [e7dba84a] Running /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070658 /var/www/hello_world/releases/20240315070658/tmp /var/www/hello_world/releases/20240315070658/vendor /var/www/hello_world/releases/20240315070658/public as deploy_user@3.84.114.120
+ DEBUG [e7dba84a] Command: /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070658 /var/www/hello_world/releases/20240315070658/tmp /var/www/hello_world/releases/20240315070658/vendor /var/www/hello_world/releases/20240315070658/public
+  INFO [e7dba84a] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [eaa36361] Running [ -L /var/www/hello_world/releases/20240315070658/log ] as deploy_user@3.84.114.120
+ DEBUG [eaa36361] Command: [ -L /var/www/hello_world/releases/20240315070658/log ]
+ DEBUG [eaa36361] Finished in 0.049 seconds with exit status 1 (failed).
+ DEBUG [3d64ab46] Running [ -d /var/www/hello_world/releases/20240315070658/log ] as deploy_user@3.84.114.120
+ DEBUG [3d64ab46] Command: [ -d /var/www/hello_world/releases/20240315070658/log ]
+ DEBUG [3d64ab46] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [c1a7534e] Running /usr/bin/env rm -rf /var/www/hello_world/releases/20240315070658/log as deploy_user@3.84.114.120
+ DEBUG [c1a7534e] Command: /usr/bin/env rm -rf /var/www/hello_world/releases/20240315070658/log
+  INFO [c1a7534e] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [4654928a] Running /usr/bin/env ln -s /var/www/hello_world/shared/log /var/www/hello_world/releases/20240315070658/log as deploy_user@3.84.114.120
+ DEBUG [4654928a] Command: /usr/bin/env ln -s /var/www/hello_world/shared/log /var/www/hello_world/releases/20240315070658/log
+  INFO [4654928a] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [73486b95] Running [ -L /var/www/hello_world/releases/20240315070658/tmp/pids ] as deploy_user@3.84.114.120
+ DEBUG [73486b95] Command: [ -L /var/www/hello_world/releases/20240315070658/tmp/pids ]
+ DEBUG [73486b95] Finished in 0.049 seconds with exit status 1 (failed).
+ DEBUG [9b8ce2a3] Running [ -d /var/www/hello_world/releases/20240315070658/tmp/pids ] as deploy_user@3.84.114.120
+ DEBUG [9b8ce2a3] Command: [ -d /var/www/hello_world/releases/20240315070658/tmp/pids ]
+ DEBUG [9b8ce2a3] Finished in 0.049 seconds with exit status 1 (failed).
+  INFO [917fb975] Running /usr/bin/env ln -s /var/www/hello_world/shared/tmp/pids /var/www/hello_world/releases/20240315070658/tmp/pids as deploy_user@3.84.114.120
+ DEBUG [917fb975] Command: /usr/bin/env ln -s /var/www/hello_world/shared/tmp/pids /var/www/hello_world/releases/20240315070658/tmp/pids
+  INFO [917fb975] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [bf348b50] Running [ -L /var/www/hello_world/releases/20240315070658/tmp/cache ] as deploy_user@3.84.114.120
+ DEBUG [bf348b50] Command: [ -L /var/www/hello_world/releases/20240315070658/tmp/cache ]
+ DEBUG [bf348b50] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [8645d3a0] Running [ -d /var/www/hello_world/releases/20240315070658/tmp/cache ] as deploy_user@3.84.114.120
+ DEBUG [8645d3a0] Command: [ -d /var/www/hello_world/releases/20240315070658/tmp/cache ]
+ DEBUG [8645d3a0] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [6e1d86d5] Running /usr/bin/env rm -rf /var/www/hello_world/releases/20240315070658/tmp/cache as deploy_user@3.84.114.120
+ DEBUG [6e1d86d5] Command: /usr/bin/env rm -rf /var/www/hello_world/releases/20240315070658/tmp/cache
+  INFO [6e1d86d5] Finished in 0.079 seconds with exit status 0 (successful).
+  INFO [cf2dd119] Running /usr/bin/env ln -s /var/www/hello_world/shared/tmp/cache /var/www/hello_world/releases/20240315070658/tmp/cache as deploy_user@3.84.114.120
+ DEBUG [cf2dd119] Command: /usr/bin/env ln -s /var/www/hello_world/shared/tmp/cache /var/www/hello_world/releases/20240315070658/tmp/cache
+  INFO [cf2dd119] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [69d364fd] Running [ -L /var/www/hello_world/releases/20240315070658/tmp/sockets ] as deploy_user@3.84.114.120
+ DEBUG [69d364fd] Command: [ -L /var/www/hello_world/releases/20240315070658/tmp/sockets ]
+ DEBUG [69d364fd] Finished in 0.051 seconds with exit status 1 (failed).
+ DEBUG [8ee4698d] Running [ -d /var/www/hello_world/releases/20240315070658/tmp/sockets ] as deploy_user@3.84.114.120
+ DEBUG [8ee4698d] Command: [ -d /var/www/hello_world/releases/20240315070658/tmp/sockets ]
+ DEBUG [8ee4698d] Finished in 0.046 seconds with exit status 1 (failed).
+  INFO [cc5c80f5] Running /usr/bin/env ln -s /var/www/hello_world/shared/tmp/sockets /var/www/hello_world/releases/20240315070658/tmp/sockets as deploy_user@3.84.114.120
+ DEBUG [cc5c80f5] Command: /usr/bin/env ln -s /var/www/hello_world/shared/tmp/sockets /var/www/hello_world/releases/20240315070658/tmp/sockets
+  INFO [cc5c80f5] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [cb56a7bb] Running [ -L /var/www/hello_world/releases/20240315070658/vendor/bundle ] as deploy_user@3.84.114.120
+ DEBUG [cb56a7bb] Command: [ -L /var/www/hello_world/releases/20240315070658/vendor/bundle ]
+ DEBUG [cb56a7bb] Finished in 0.039 seconds with exit status 1 (failed).
+ DEBUG [8f8f27a1] Running [ -d /var/www/hello_world/releases/20240315070658/vendor/bundle ] as deploy_user@3.84.114.120
+ DEBUG [8f8f27a1] Command: [ -d /var/www/hello_world/releases/20240315070658/vendor/bundle ]
+ DEBUG [8f8f27a1] Finished in 0.047 seconds with exit status 1 (failed).
+  INFO [b998335b] Running /usr/bin/env ln -s /var/www/hello_world/shared/vendor/bundle /var/www/hello_world/releases/20240315070658/vendor/bundle as deploy_user@3.84.114.120
+ DEBUG [b998335b] Command: /usr/bin/env ln -s /var/www/hello_world/shared/vendor/bundle /var/www/hello_world/releases/20240315070658/vendor/bundle
+  INFO [b998335b] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [ad8c2f71] Running [ -L /var/www/hello_world/releases/20240315070658/public/system ] as deploy_user@3.84.114.120
+ DEBUG [ad8c2f71] Command: [ -L /var/www/hello_world/releases/20240315070658/public/system ]
+ DEBUG [ad8c2f71] Finished in 0.037 seconds with exit status 1 (failed).
+ DEBUG [72ce612b] Running [ -d /var/www/hello_world/releases/20240315070658/public/system ] as deploy_user@3.84.114.120
+ DEBUG [72ce612b] Command: [ -d /var/www/hello_world/releases/20240315070658/public/system ]
+ DEBUG [72ce612b] Finished in 0.041 seconds with exit status 1 (failed).
+  INFO [63aead77] Running /usr/bin/env ln -s /var/www/hello_world/shared/public/system /var/www/hello_world/releases/20240315070658/public/system as deploy_user@3.84.114.120
+ DEBUG [63aead77] Command: /usr/bin/env ln -s /var/www/hello_world/shared/public/system /var/www/hello_world/releases/20240315070658/public/system
+  INFO [63aead77] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [ac3579af] Running [ -L /var/www/hello_world/releases/20240315070658/public/uploads ] as deploy_user@3.84.114.120
+ DEBUG [ac3579af] Command: [ -L /var/www/hello_world/releases/20240315070658/public/uploads ]
+ DEBUG [ac3579af] Finished in 0.054 seconds with exit status 1 (failed).
+ DEBUG [19e38d20] Running [ -d /var/www/hello_world/releases/20240315070658/public/uploads ] as deploy_user@3.84.114.120
+ DEBUG [19e38d20] Command: [ -d /var/www/hello_world/releases/20240315070658/public/uploads ]
+ DEBUG [19e38d20] Finished in 0.049 seconds with exit status 1 (failed).
+  INFO [0e303fc8] Running /usr/bin/env ln -s /var/www/hello_world/shared/public/uploads /var/www/hello_world/releases/20240315070658/public/uploads as deploy_user@3.84.114.120
+ DEBUG [0e303fc8] Command: /usr/bin/env ln -s /var/www/hello_world/shared/public/uploads /var/www/hello_world/releases/20240315070658/public/uploads
+  INFO [0e303fc8] Finished in 0.052 seconds with exit status 0 (successful).
+ DEBUG [538c7936] Running [ -L /var/www/hello_world/releases/20240315070658/public/assets ] as deploy_user@3.84.114.120
+ DEBUG [538c7936] Command: [ -L /var/www/hello_world/releases/20240315070658/public/assets ]
+ DEBUG [538c7936] Finished in 0.048 seconds with exit status 1 (failed).
+ DEBUG [d3c01797] Running [ -d /var/www/hello_world/releases/20240315070658/public/assets ] as deploy_user@3.84.114.120
+ DEBUG [d3c01797] Command: [ -d /var/www/hello_world/releases/20240315070658/public/assets ]
+ DEBUG [d3c01797] Finished in 0.051 seconds with exit status 1 (failed).
+  INFO [025df5a8] Running /usr/bin/env ln -s /var/www/hello_world/shared/public/assets /var/www/hello_world/releases/20240315070658/public/assets as deploy_user@3.84.114.120
+ DEBUG [025df5a8] Command: /usr/bin/env ln -s /var/www/hello_world/shared/public/assets /var/www/hello_world/releases/20240315070658/public/assets
+  INFO [025df5a8] Finished in 0.052 seconds with exit status 0 (successful).
+ DEBUG [6c6f0c88] Running if test ! -d /var/www/hello_world/releases/20240315070658; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070658'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [6c6f0c88] Command: if test ! -d /var/www/hello_world/releases/20240315070658; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070658'" 1>&2; false; fi
+ DEBUG [6c6f0c88] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [50916e64] Running /usr/local/rvm/bin/rvm 3.2.2 do bundle config --local deployment true as deploy_user@3.84.114.120
+ DEBUG [50916e64] Command: cd /var/www/hello_world/releases/20240315070658 && /usr/local/rvm/bin/rvm 3.2.2 do bundle config --local deployment true
+  INFO [50916e64] Finished in 0.670 seconds with exit status 0 (successful).
+  INFO [2fe9b8c0] Running /usr/local/rvm/bin/rvm 3.2.2 do bundle config --local path /var/www/hello_world/shared/bundle as deploy_user@3.84.114.120
+ DEBUG [2fe9b8c0] Command: cd /var/www/hello_world/releases/20240315070658 && /usr/local/rvm/bin/rvm 3.2.2 do bundle config --local path /var/www/hello_world/shared/bundle
+  INFO [2fe9b8c0] Finished in 0.667 seconds with exit status 0 (successful).
+  INFO [cd2e4c33] Running /usr/local/rvm/bin/rvm 3.2.2 do bundle config --local without development:test as deploy_user@3.84.114.120
+ DEBUG [cd2e4c33] Command: cd /var/www/hello_world/releases/20240315070658 && /usr/local/rvm/bin/rvm 3.2.2 do bundle config --local without development:test
+  INFO [cd2e4c33] Finished in 0.854 seconds with exit status 0 (successful).
+ DEBUG [4461bf18] Running if test ! -d /var/www/hello_world/releases/20240315070658; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070658'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [4461bf18] Command: if test ! -d /var/www/hello_world/releases/20240315070658; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070658'" 1>&2; false; fi
+ DEBUG [4461bf18] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [5f2e4c0d] Running /usr/local/rvm/bin/rvm 3.2.2 do bundle check as deploy_user@3.84.114.120
+ DEBUG [5f2e4c0d] Command: cd /var/www/hello_world/releases/20240315070658 && /usr/local/rvm/bin/rvm 3.2.2 do bundle check
+ DEBUG [5f2e4c0d] 	The Gemfile's dependencies are satisfied
+ DEBUG [5f2e4c0d] Finished in 0.946 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [a3b63626] Running if test ! -d /var/www/hello_world/releases/20240315070658; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070658'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [a3b63626] Command: if test ! -d /var/www/hello_world/releases/20240315070658; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070658'" 1>&2; false; fi
+ DEBUG [a3b63626] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [7672881e] Running /usr/local/rvm/bin/rvm 3.2.2 do bundle exec rake assets:precompile as deploy_user@3.84.114.120
+ DEBUG [7672881e] Command: cd /var/www/hello_world/releases/20240315070658 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; /usr/local/rvm/bin/rvm 3.2.2 do bundle exec rake assets:precompile )
+ DEBUG [7672881e] 	rake aborted!
+Sprockets::ArgumentError: link_tree argument must be a directory (Sprockets::ArgumentError)
+/var/www/hello_world/releases/20240315070658/app/assets/config/manifest.js:1
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:407:in `expand_relative_dirname'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:359:in `process_link_tree_directive'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:189:in `block in process_directives'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:187:in `each'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:187:in `process_directives'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:84:in `_call'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:65:in `call'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:84:in `call_processor'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:65:in `reverse_each'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:65:in `call_processors'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:184:in `load_from_unloaded'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:59:in `block in load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:43:in `load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/cached_environment.rb:44:in `block in load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/cached_environment.rb:44:in `load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/bundle.rb:27:in `call'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:84:in `call_processor'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:65:in `reverse_each'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:65:in `call_processors'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:184:in `load_from_unloaded'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:59:in `block in load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:43:in `load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/cached_environment.rb:44:in `block in load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/cached_environment.rb:44:in `load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/base.rb:81:in `find_asset'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/base.rb:88:in `find_all_linked_assets'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/manifest.rb:125:in `each'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/manifest.rb:125:in `to_a'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in `run_task'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in `block (3 levels) in create_worker'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `loop'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `block (2 levels) in create_worker'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `catch'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `block in create_worker'
+Tasks: TOP => assets:precompile
+(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 07:09:22 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [2ec4ca81] Running /usr/bin/env which passenger as deploy_user@3.84.114.120
+ DEBUG [2ec4ca81] Command: /usr/bin/env which passenger
+ DEBUG [2ec4ca81] 	/usr/bin/passenger
+ DEBUG [2ec4ca81] Finished in 0.708 seconds with exit status 0 (successful).
+ DEBUG [7ca40dd6] Running [ -d ~/.rvm ] as deploy_user@3.84.114.120
+ DEBUG [7ca40dd6] Command: [ -d ~/.rvm ]
+ DEBUG [7ca40dd6] Finished in 0.048 seconds with exit status 1 (failed).
+ DEBUG [b980c071] Running [ -d /usr/local/rvm ] as deploy_user@3.84.114.120
+ DEBUG [b980c071] Command: [ -d /usr/local/rvm ]
+ DEBUG [b980c071] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [5ead0468] Running /usr/local/rvm/bin/rvm version as deploy_user@3.84.114.120
+ DEBUG [5ead0468] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [5ead0468] 	rvm 1.29.12 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [5ead0468] Finished in 0.258 seconds with exit status 0 (successful).
+ DEBUG [740a879e] Running /usr/local/rvm/bin/rvm current as deploy_user@3.84.114.120
+ DEBUG [740a879e] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [740a879e] 	ruby-3.2.2
+ DEBUG [740a879e] Finished in 0.243 seconds with exit status 0 (successful).
+ DEBUG [933a9789] Running /usr/local/rvm/bin/rvm 3.2.2 do ruby --version as deploy_user@3.84.114.120
+ DEBUG [933a9789] Command: /usr/local/rvm/bin/rvm 3.2.2 do ruby --version
+ DEBUG [933a9789] 	ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x86_64-linux]
+ DEBUG [933a9789] Finished in 0.402 seconds with exit status 0 (successful).
+  INFO [9854fa58] Running /usr/bin/env mkdir -p /tmp as deploy_user@3.84.114.120
+ DEBUG [9854fa58] Command: /usr/bin/env mkdir -p /tmp
+  INFO [9854fa58] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-cc50c02abb847de2ddf8.sh 0.0%
+  INFO Uploading /tmp/git-ssh-cc50c02abb847de2ddf8.sh 100.0%
+  INFO [1be8f668] Running /usr/bin/env chmod 700 /tmp/git-ssh-cc50c02abb847de2ddf8.sh as deploy_user@3.84.114.120
+ DEBUG [1be8f668] Command: /usr/bin/env chmod 700 /tmp/git-ssh-cc50c02abb847de2ddf8.sh
+  INFO [1be8f668] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [d4490647] Running /usr/bin/env mkdir -p /tmp as deploy_user@3.84.114.120
+ DEBUG [d4490647] Command: /usr/bin/env mkdir -p /tmp
+  INFO [d4490647] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-cc50c02abb847de2ddf8.sh 0.0%
+  INFO Uploading /tmp/git-ssh-cc50c02abb847de2ddf8.sh 100.0%
+  INFO [fdeaf3d0] Running /usr/bin/env chmod 700 /tmp/git-ssh-cc50c02abb847de2ddf8.sh as deploy_user@3.84.114.120
+ DEBUG [fdeaf3d0] Command: /usr/bin/env chmod 700 /tmp/git-ssh-cc50c02abb847de2ddf8.sh
+  INFO [fdeaf3d0] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [70c99e8a] Running /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD as deploy_user@3.84.114.120
+ DEBUG [70c99e8a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cc50c02abb847de2ddf8.sh" ; /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD )
+ DEBUG [70c99e8a] 	cfff9a468fa73af159756b43141b85b62b8ce9d5	HEAD
+  INFO [70c99e8a] Finished in 0.334 seconds with exit status 0 (successful).
+  INFO [907ab7ea] Running /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD as deploy_user@3.84.114.120
+ DEBUG [907ab7ea] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cc50c02abb847de2ddf8.sh" ; /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD )
+ DEBUG [907ab7ea] 	cfff9a468fa73af159756b43141b85b62b8ce9d5	HEAD
+  INFO [907ab7ea] Finished in 0.330 seconds with exit status 0 (successful).
+  INFO [fff5f5f3] Running /usr/bin/env mkdir -p /var/www/hello_world/shared /var/www/hello_world/releases as deploy_user@3.84.114.120
+ DEBUG [fff5f5f3] Command: /usr/bin/env mkdir -p /var/www/hello_world/shared /var/www/hello_world/releases
+  INFO [fff5f5f3] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [d72b1eeb] Running /usr/bin/env mkdir -p /var/www/hello_world/shared/log /var/www/hello_world/shared/tmp/pids /var/www/hello_world/shared/tmp/cache /var/www/hello_world/shared/tmp/sockets /var/www/hello_world/shared/vendor/bundle /var/www/hello_world/shared/public/system /var/www/hello_world/shared/public/uploads /var/www/hello_world/shared/public/assets as deploy_user@3.84.114.120
+ DEBUG [d72b1eeb] Command: /usr/bin/env mkdir -p /var/www/hello_world/shared/log /var/www/hello_world/shared/tmp/pids /var/www/hello_world/shared/tmp/cache /var/www/hello_world/shared/tmp/sockets /var/www/hello_world/shared/vendor/bundle /var/www/hello_world/shared/public/system /var/www/hello_world/shared/public/uploads /var/www/hello_world/shared/public/assets
+  INFO [d72b1eeb] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [b2476525] Running [ -f /var/www/hello_world/current/REVISION ] as deploy_user@3.84.114.120
+ DEBUG [b2476525] Command: [ -f /var/www/hello_world/current/REVISION ]
+ DEBUG [b2476525] Finished in 0.048 seconds with exit status 1 (failed).
+ DEBUG [befea784] Running [ -f /var/www/hello_world/repo/HEAD ] as deploy_user@3.84.114.120
+ DEBUG [befea784] Command: [ -f /var/www/hello_world/repo/HEAD ]
+ DEBUG [befea784] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/hello_world/repo
+ DEBUG [b5945a8c] Running [ -f /var/www/hello_world/repo/HEAD ] as deploy_user@3.84.114.120
+ DEBUG [b5945a8c] Command: [ -f /var/www/hello_world/repo/HEAD ]
+ DEBUG [b5945a8c] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/hello_world/repo
+ DEBUG [b9e534b0] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [b9e534b0] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [b9e534b0] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [4818bbbc] Running /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git as deploy_user@3.84.114.120
+ DEBUG [4818bbbc] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cc50c02abb847de2ddf8.sh" ; /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git )
+  INFO [4818bbbc] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [73e7f1ca] Running /usr/bin/env git remote update --prune as deploy_user@3.84.114.120
+ DEBUG [73e7f1ca] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cc50c02abb847de2ddf8.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [73e7f1ca] 	Fetching origin
+  INFO [73e7f1ca] Finished in 0.344 seconds with exit status 0 (successful).
+ DEBUG [d80ccb22] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [d80ccb22] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [d80ccb22] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [024eb649] Running /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git as deploy_user@3.84.114.120
+ DEBUG [024eb649] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cc50c02abb847de2ddf8.sh" ; /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git )
+  INFO [024eb649] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [9d320a41] Running /usr/bin/env git remote update --prune as deploy_user@3.84.114.120
+ DEBUG [9d320a41] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cc50c02abb847de2ddf8.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [9d320a41] 	Fetching origin
+  INFO [9d320a41] Finished in 0.332 seconds with exit status 0 (successful).
+ DEBUG [83c1b790] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [83c1b790] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [83c1b790] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [90224bd4] Running /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070925 as deploy_user@3.84.114.120
+ DEBUG [90224bd4] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cc50c02abb847de2ddf8.sh" ; /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070925 )
+  INFO [90224bd4] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [47eefae4] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/hello_world/releases/20240315070925 as deploy_user@3.84.114.120
+ DEBUG [47eefae4] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cc50c02abb847de2ddf8.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/hello_world/releases/20240315070925 )
+  INFO [47eefae4] Finished in 0.280 seconds with exit status 0 (successful).
+ DEBUG [25e14a2e] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [25e14a2e] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [25e14a2e] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [29d49cef] Running /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070925 as deploy_user@3.84.114.120
+ DEBUG [29d49cef] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cc50c02abb847de2ddf8.sh" ; /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070925 )
+  INFO [29d49cef] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [64466c51] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/hello_world/releases/20240315070925 as deploy_user@3.84.114.120
+ DEBUG [64466c51] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cc50c02abb847de2ddf8.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/hello_world/releases/20240315070925 )
+  INFO [64466c51] Finished in 0.311 seconds with exit status 0 (successful).
+ DEBUG [0000ede1] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [0000ede1] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [0000ede1] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [b2e0ea5b] Running /usr/bin/env git rev-list --max-count=1 master as deploy_user@3.84.114.120
+ DEBUG [b2e0ea5b] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cc50c02abb847de2ddf8.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [b2e0ea5b] 	616299a1fb2cb954c659d9c53a2ad91ae5f32784
+ DEBUG [b2e0ea5b] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [e0aea8f9] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [e0aea8f9] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [e0aea8f9] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [71004869] Running /usr/bin/env git rev-list --max-count=1 master as deploy_user@3.84.114.120
+ DEBUG [71004869] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cc50c02abb847de2ddf8.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [71004869] 	616299a1fb2cb954c659d9c53a2ad91ae5f32784
+ DEBUG [71004869] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [cb595f6c] Running if test ! -d /var/www/hello_world/releases/20240315070925; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070925'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [cb595f6c] Command: if test ! -d /var/www/hello_world/releases/20240315070925; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070925'" 1>&2; false; fi
+ DEBUG [cb595f6c] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [e9045e6b] Running /usr/bin/env echo "616299a1fb2cb954c659d9c53a2ad91ae5f32784" > REVISION as deploy_user@3.84.114.120
+ DEBUG [e9045e6b] Command: cd /var/www/hello_world/releases/20240315070925 && /usr/bin/env echo "616299a1fb2cb954c659d9c53a2ad91ae5f32784" > REVISION
+  INFO [e9045e6b] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [c87cef84] Running /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070925/config as deploy_user@3.84.114.120
+ DEBUG [c87cef84] Command: /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070925/config
+  INFO [c87cef84] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [59aa83ec] Running [ -L /var/www/hello_world/releases/20240315070925/config/application.yml ] as deploy_user@3.84.114.120
+ DEBUG [59aa83ec] Command: [ -L /var/www/hello_world/releases/20240315070925/config/application.yml ]
+ DEBUG [59aa83ec] Finished in 0.049 seconds with exit status 1 (failed).
+ DEBUG [af2a6eb5] Running [ -f /var/www/hello_world/releases/20240315070925/config/application.yml ] as deploy_user@3.84.114.120
+ DEBUG [af2a6eb5] Command: [ -f /var/www/hello_world/releases/20240315070925/config/application.yml ]
+ DEBUG [af2a6eb5] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [b69d7b7e] Running /usr/bin/env rm /var/www/hello_world/releases/20240315070925/config/application.yml as deploy_user@3.84.114.120
+ DEBUG [b69d7b7e] Command: /usr/bin/env rm /var/www/hello_world/releases/20240315070925/config/application.yml
+  INFO [b69d7b7e] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [71c7f960] Running /usr/bin/env ln -s /var/www/hello_world/shared/config/application.yml /var/www/hello_world/releases/20240315070925/config/application.yml as deploy_user@3.84.114.120
+ DEBUG [71c7f960] Command: /usr/bin/env ln -s /var/www/hello_world/shared/config/application.yml /var/www/hello_world/releases/20240315070925/config/application.yml
+  INFO [71c7f960] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [2c357f1e] Running /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070925 /var/www/hello_world/releases/20240315070925/tmp /var/www/hello_world/releases/20240315070925/vendor /var/www/hello_world/releases/20240315070925/public as deploy_user@3.84.114.120
+ DEBUG [2c357f1e] Command: /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315070925 /var/www/hello_world/releases/20240315070925/tmp /var/www/hello_world/releases/20240315070925/vendor /var/www/hello_world/releases/20240315070925/public
+  INFO [2c357f1e] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [f1cbf06d] Running [ -L /var/www/hello_world/releases/20240315070925/log ] as deploy_user@3.84.114.120
+ DEBUG [f1cbf06d] Command: [ -L /var/www/hello_world/releases/20240315070925/log ]
+ DEBUG [f1cbf06d] Finished in 0.049 seconds with exit status 1 (failed).
+ DEBUG [c28523cb] Running [ -d /var/www/hello_world/releases/20240315070925/log ] as deploy_user@3.84.114.120
+ DEBUG [c28523cb] Command: [ -d /var/www/hello_world/releases/20240315070925/log ]
+ DEBUG [c28523cb] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [9febcb62] Running /usr/bin/env rm -rf /var/www/hello_world/releases/20240315070925/log as deploy_user@3.84.114.120
+ DEBUG [9febcb62] Command: /usr/bin/env rm -rf /var/www/hello_world/releases/20240315070925/log
+  INFO [9febcb62] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [b70f1399] Running /usr/bin/env ln -s /var/www/hello_world/shared/log /var/www/hello_world/releases/20240315070925/log as deploy_user@3.84.114.120
+ DEBUG [b70f1399] Command: /usr/bin/env ln -s /var/www/hello_world/shared/log /var/www/hello_world/releases/20240315070925/log
+  INFO [b70f1399] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [98ad7eaa] Running [ -L /var/www/hello_world/releases/20240315070925/tmp/pids ] as deploy_user@3.84.114.120
+ DEBUG [98ad7eaa] Command: [ -L /var/www/hello_world/releases/20240315070925/tmp/pids ]
+ DEBUG [98ad7eaa] Finished in 0.048 seconds with exit status 1 (failed).
+ DEBUG [1bb3a3cd] Running [ -d /var/www/hello_world/releases/20240315070925/tmp/pids ] as deploy_user@3.84.114.120
+ DEBUG [1bb3a3cd] Command: [ -d /var/www/hello_world/releases/20240315070925/tmp/pids ]
+ DEBUG [1bb3a3cd] Finished in 0.050 seconds with exit status 1 (failed).
+  INFO [5768aec5] Running /usr/bin/env ln -s /var/www/hello_world/shared/tmp/pids /var/www/hello_world/releases/20240315070925/tmp/pids as deploy_user@3.84.114.120
+ DEBUG [5768aec5] Command: /usr/bin/env ln -s /var/www/hello_world/shared/tmp/pids /var/www/hello_world/releases/20240315070925/tmp/pids
+  INFO [5768aec5] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [6e8381cf] Running [ -L /var/www/hello_world/releases/20240315070925/tmp/cache ] as deploy_user@3.84.114.120
+ DEBUG [6e8381cf] Command: [ -L /var/www/hello_world/releases/20240315070925/tmp/cache ]
+ DEBUG [6e8381cf] Finished in 0.049 seconds with exit status 1 (failed).
+ DEBUG [44562d46] Running [ -d /var/www/hello_world/releases/20240315070925/tmp/cache ] as deploy_user@3.84.114.120
+ DEBUG [44562d46] Command: [ -d /var/www/hello_world/releases/20240315070925/tmp/cache ]
+ DEBUG [44562d46] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [215d30b4] Running /usr/bin/env rm -rf /var/www/hello_world/releases/20240315070925/tmp/cache as deploy_user@3.84.114.120
+ DEBUG [215d30b4] Command: /usr/bin/env rm -rf /var/www/hello_world/releases/20240315070925/tmp/cache
+  INFO [215d30b4] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [9b5c2384] Running /usr/bin/env ln -s /var/www/hello_world/shared/tmp/cache /var/www/hello_world/releases/20240315070925/tmp/cache as deploy_user@3.84.114.120
+ DEBUG [9b5c2384] Command: /usr/bin/env ln -s /var/www/hello_world/shared/tmp/cache /var/www/hello_world/releases/20240315070925/tmp/cache
+  INFO [9b5c2384] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [c2075827] Running [ -L /var/www/hello_world/releases/20240315070925/tmp/sockets ] as deploy_user@3.84.114.120
+ DEBUG [c2075827] Command: [ -L /var/www/hello_world/releases/20240315070925/tmp/sockets ]
+ DEBUG [c2075827] Finished in 0.049 seconds with exit status 1 (failed).
+ DEBUG [ee07c764] Running [ -d /var/www/hello_world/releases/20240315070925/tmp/sockets ] as deploy_user@3.84.114.120
+ DEBUG [ee07c764] Command: [ -d /var/www/hello_world/releases/20240315070925/tmp/sockets ]
+ DEBUG [ee07c764] Finished in 0.049 seconds with exit status 1 (failed).
+  INFO [455d1b53] Running /usr/bin/env ln -s /var/www/hello_world/shared/tmp/sockets /var/www/hello_world/releases/20240315070925/tmp/sockets as deploy_user@3.84.114.120
+ DEBUG [455d1b53] Command: /usr/bin/env ln -s /var/www/hello_world/shared/tmp/sockets /var/www/hello_world/releases/20240315070925/tmp/sockets
+  INFO [455d1b53] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [b3db50ab] Running [ -L /var/www/hello_world/releases/20240315070925/vendor/bundle ] as deploy_user@3.84.114.120
+ DEBUG [b3db50ab] Command: [ -L /var/www/hello_world/releases/20240315070925/vendor/bundle ]
+ DEBUG [b3db50ab] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [2781b1a8] Running [ -d /var/www/hello_world/releases/20240315070925/vendor/bundle ] as deploy_user@3.84.114.120
+ DEBUG [2781b1a8] Command: [ -d /var/www/hello_world/releases/20240315070925/vendor/bundle ]
+ DEBUG [2781b1a8] Finished in 0.051 seconds with exit status 1 (failed).
+  INFO [4cb48fab] Running /usr/bin/env ln -s /var/www/hello_world/shared/vendor/bundle /var/www/hello_world/releases/20240315070925/vendor/bundle as deploy_user@3.84.114.120
+ DEBUG [4cb48fab] Command: /usr/bin/env ln -s /var/www/hello_world/shared/vendor/bundle /var/www/hello_world/releases/20240315070925/vendor/bundle
+  INFO [4cb48fab] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [6403c24c] Running [ -L /var/www/hello_world/releases/20240315070925/public/system ] as deploy_user@3.84.114.120
+ DEBUG [6403c24c] Command: [ -L /var/www/hello_world/releases/20240315070925/public/system ]
+ DEBUG [6403c24c] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [8ffa4519] Running [ -d /var/www/hello_world/releases/20240315070925/public/system ] as deploy_user@3.84.114.120
+ DEBUG [8ffa4519] Command: [ -d /var/www/hello_world/releases/20240315070925/public/system ]
+ DEBUG [8ffa4519] Finished in 0.048 seconds with exit status 1 (failed).
+  INFO [a84dd1a1] Running /usr/bin/env ln -s /var/www/hello_world/shared/public/system /var/www/hello_world/releases/20240315070925/public/system as deploy_user@3.84.114.120
+ DEBUG [a84dd1a1] Command: /usr/bin/env ln -s /var/www/hello_world/shared/public/system /var/www/hello_world/releases/20240315070925/public/system
+  INFO [a84dd1a1] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [d2e62619] Running [ -L /var/www/hello_world/releases/20240315070925/public/uploads ] as deploy_user@3.84.114.120
+ DEBUG [d2e62619] Command: [ -L /var/www/hello_world/releases/20240315070925/public/uploads ]
+ DEBUG [d2e62619] Finished in 0.048 seconds with exit status 1 (failed).
+ DEBUG [6870a334] Running [ -d /var/www/hello_world/releases/20240315070925/public/uploads ] as deploy_user@3.84.114.120
+ DEBUG [6870a334] Command: [ -d /var/www/hello_world/releases/20240315070925/public/uploads ]
+ DEBUG [6870a334] Finished in 0.048 seconds with exit status 1 (failed).
+  INFO [fd70ce75] Running /usr/bin/env ln -s /var/www/hello_world/shared/public/uploads /var/www/hello_world/releases/20240315070925/public/uploads as deploy_user@3.84.114.120
+ DEBUG [fd70ce75] Command: /usr/bin/env ln -s /var/www/hello_world/shared/public/uploads /var/www/hello_world/releases/20240315070925/public/uploads
+  INFO [fd70ce75] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [afe1b9dc] Running [ -L /var/www/hello_world/releases/20240315070925/public/assets ] as deploy_user@3.84.114.120
+ DEBUG [afe1b9dc] Command: [ -L /var/www/hello_world/releases/20240315070925/public/assets ]
+ DEBUG [afe1b9dc] Finished in 0.054 seconds with exit status 1 (failed).
+ DEBUG [ec33a8dc] Running [ -d /var/www/hello_world/releases/20240315070925/public/assets ] as deploy_user@3.84.114.120
+ DEBUG [ec33a8dc] Command: [ -d /var/www/hello_world/releases/20240315070925/public/assets ]
+ DEBUG [ec33a8dc] Finished in 0.050 seconds with exit status 1 (failed).
+  INFO [0decd78c] Running /usr/bin/env ln -s /var/www/hello_world/shared/public/assets /var/www/hello_world/releases/20240315070925/public/assets as deploy_user@3.84.114.120
+ DEBUG [0decd78c] Command: /usr/bin/env ln -s /var/www/hello_world/shared/public/assets /var/www/hello_world/releases/20240315070925/public/assets
+  INFO [0decd78c] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [372ee829] Running if test ! -d /var/www/hello_world/releases/20240315070925; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070925'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [372ee829] Command: if test ! -d /var/www/hello_world/releases/20240315070925; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070925'" 1>&2; false; fi
+ DEBUG [372ee829] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [e36ebde7] Running /usr/local/rvm/bin/rvm 3.2.2 do bundle config --local deployment true as deploy_user@3.84.114.120
+ DEBUG [e36ebde7] Command: cd /var/www/hello_world/releases/20240315070925 && /usr/local/rvm/bin/rvm 3.2.2 do bundle config --local deployment true
+  INFO [e36ebde7] Finished in 0.672 seconds with exit status 0 (successful).
+  INFO [bd601672] Running /usr/local/rvm/bin/rvm 3.2.2 do bundle config --local path /var/www/hello_world/shared/bundle as deploy_user@3.84.114.120
+ DEBUG [bd601672] Command: cd /var/www/hello_world/releases/20240315070925 && /usr/local/rvm/bin/rvm 3.2.2 do bundle config --local path /var/www/hello_world/shared/bundle
+  INFO [bd601672] Finished in 0.663 seconds with exit status 0 (successful).
+  INFO [83bd27ec] Running /usr/local/rvm/bin/rvm 3.2.2 do bundle config --local without development:test as deploy_user@3.84.114.120
+ DEBUG [83bd27ec] Command: cd /var/www/hello_world/releases/20240315070925 && /usr/local/rvm/bin/rvm 3.2.2 do bundle config --local without development:test
+  INFO [83bd27ec] Finished in 0.860 seconds with exit status 0 (successful).
+ DEBUG [7b440b77] Running if test ! -d /var/www/hello_world/releases/20240315070925; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070925'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [7b440b77] Command: if test ! -d /var/www/hello_world/releases/20240315070925; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070925'" 1>&2; false; fi
+ DEBUG [7b440b77] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [00d891c6] Running /usr/local/rvm/bin/rvm 3.2.2 do bundle check as deploy_user@3.84.114.120
+ DEBUG [00d891c6] Command: cd /var/www/hello_world/releases/20240315070925 && /usr/local/rvm/bin/rvm 3.2.2 do bundle check
+ DEBUG [00d891c6] 	The Gemfile's dependencies are satisfied
+ DEBUG [00d891c6] Finished in 0.940 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [317026d9] Running if test ! -d /var/www/hello_world/releases/20240315070925; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070925'" 1>&2; false; fi as deploy_user@3.84.114.120
+ DEBUG [317026d9] Command: if test ! -d /var/www/hello_world/releases/20240315070925; then echo "Directory does not exist '/var/www/hello_world/releases/20240315070925'" 1>&2; false; fi
+ DEBUG [317026d9] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [40da4216] Running /usr/local/rvm/bin/rvm 3.2.2 do bundle exec rake assets:precompile as deploy_user@3.84.114.120
+ DEBUG [40da4216] Command: cd /var/www/hello_world/releases/20240315070925 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; /usr/local/rvm/bin/rvm 3.2.2 do bundle exec rake assets:precompile )
+ DEBUG [40da4216] 	rake aborted!
+Sprockets::ArgumentError: link_tree argument must be a directory (Sprockets::ArgumentError)
+/var/www/hello_world/releases/20240315070925/app/assets/config/manifest.js:1
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:407:in `expand_relative_dirname'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:359:in `process_link_tree_directive'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:189:in `block in process_directives'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:187:in `each'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:187:in `process_directives'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:84:in `_call'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/directive_processor.rb:65:in `call'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:84:in `call_processor'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:65:in `reverse_each'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:65:in `call_processors'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:184:in `load_from_unloaded'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:59:in `block in load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:43:in `load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/cached_environment.rb:44:in `block in load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/cached_environment.rb:44:in `load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/bundle.rb:27:in `call'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:84:in `call_processor'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:65:in `reverse_each'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/processor_utils.rb:65:in `call_processors'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:184:in `load_from_unloaded'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:59:in `block in load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/loader.rb:43:in `load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/cached_environment.rb:44:in `block in load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/cached_environment.rb:44:in `load'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/base.rb:81:in `find_asset'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/base.rb:88:in `find_all_linked_assets'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/manifest.rb:125:in `each'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/manifest.rb:125:in `to_a'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/sprockets-4.2.1/lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in `run_task'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in `block (3 levels) in create_worker'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `loop'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `block (2 levels) in create_worker'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `catch'
+/var/www/hello_world/shared/bundle/ruby/3.2.0/gems/concurrent-ruby-1.2.3/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `block in create_worker'
+Tasks: TOP => assets:precompile
+(See full trace by running task with --trace)
