@@ -2,3 +2,5 @@
 //= link_directory ../stylesheets .css
 
 //= require_tree ./channels
+//= require engine_name/application.js 
+//= require_directory ../../vendors/DataTables
