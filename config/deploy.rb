@@ -41,5 +41,5 @@ set :repo_url, "git@example.com:me/my_repo.git"
 set :application, "hello_world"
 set :repo_url, "git@github.com:bananatarakota/aws.git"
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
-set :rvm_ruby_version, '3.1.3'
+set :rvm_ruby_version, '3.2.2'
 set :passenger_restart_with_touch, true
