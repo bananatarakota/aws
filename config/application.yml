@@ -1,0 +1,16 @@
+# Add configuration values here, as shown below.
+#
+# pusher_app_id: "2954"
+# pusher_key: 7381a978f7dd7f9a1117
+# pusher_secret: abdc3b896a0ffb85d373
+# stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
+# stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
+#
+# production:
+#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+
+HELLO_WORLD_DATABASE_PASSWORD: masterkey
+HELLO_WORLD_DATABASE_HOST: database-3.cbi2m0yeaa43.us-east-1.rds.amazonaws.com
+HELLO_WORLD_DATABASE_PORT: "5432"
+SECRET_KEY_BASE: fb7c0995f0aa2d527532ee3703f92820a260af2ad1444d3a8d6a08cec2af630edf5db17dc76937bf34ace766d42d242774bd1dfeb728bcf463a8e5aca9686728

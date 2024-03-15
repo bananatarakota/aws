@@ -1,9 +1,24 @@
-## Lab Session #04
+# README
 
-Students:
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-* Zhou, Xinxiang
+Things you may want to cover:
 
-* Khalipskaya, Aglaya
+* Ruby version
 
-Your deployed webapp at Fly.io|Heroku|... (task #6): <https://*********.***.***/>
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

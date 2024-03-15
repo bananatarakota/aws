@@ -1,0 +1,363 @@
+# Logfile created on 2024-03-15 01:26:13 +0000 by logger.rb/v1.5.3
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 01:26:13 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:29:29 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e0321334] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [e0321334] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:30:54 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [5a9607f6] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [5a9607f6] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:31:49 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e96809bb] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [e96809bb] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:32:49 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [fff050f1] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [fff050f1] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:36:07 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [223eedd7] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [223eedd7] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:39:04 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [84133f8b] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [84133f8b] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:40:12 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d0417fcc] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [d0417fcc] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:41:29 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [bf77c253] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [bf77c253] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:42:31 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b55e0923] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [b55e0923] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:43:05 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d78126cd] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [d78126cd] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:43:46 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3e5998ce] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [3e5998ce] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:50:45 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [99d6acab] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [99d6acab] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:51:34 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [9c46d46c] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [9c46d46c] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:53:06 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [66bdec5c] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [66bdec5c] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:56:06 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b84fc0ab] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [b84fc0ab] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:57:01 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f0cc6cb1] Running /usr/bin/env which passenger as deploy_user@18.212.95.1830
+ DEBUG [f0cc6cb1] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:59:17 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [8d97b4c8] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [8d97b4c8] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 04:59:35 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [72adbc83] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [72adbc83] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:00:23 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a0d22215] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [a0d22215] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:02:15 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3e760f81] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [3e760f81] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:05:42 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [86022b8f] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [86022b8f] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:09:38 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b756228c] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [b756228c] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:10:00 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [adbbcf8d] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [adbbcf8d] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:17:45 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [98f81330] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [98f81330] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:23:21 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ff0a5e7f] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [ff0a5e7f] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:23:35 +0000 cap production setup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [97038dbe] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [97038dbe] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:34:08 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [06aace37] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [06aace37] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:34:22 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a986e184] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [a986e184] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:35:33 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [03c80fa8] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [03c80fa8] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:37:48 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [9fe58013] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [9fe58013] Command: /usr/bin/env which passenger
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:44:30 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [bd1278f6] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [bd1278f6] Command: /usr/bin/env which passenger
+ DEBUG [bd1278f6] 	/usr/bin/passenger
+ DEBUG [bd1278f6] Finished in 0.336 seconds with exit status 0 (successful).
+ DEBUG [e0556289] Running [ -d ~/.rvm ] as deploy_user@18.212.95.183
+ DEBUG [e0556289] Command: [ -d ~/.rvm ]
+ DEBUG [e0556289] Finished in 0.045 seconds with exit status 1 (failed).
+ DEBUG [7d75bd20] Running [ -d /usr/local/rvm ] as deploy_user@18.212.95.183
+ DEBUG [7d75bd20] Command: [ -d /usr/local/rvm ]
+ DEBUG [7d75bd20] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [617f4b64] Running /usr/local/rvm/bin/rvm version as deploy_user@18.212.95.183
+ DEBUG [617f4b64] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [617f4b64] 	rvm 1.29.12 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [617f4b64] Finished in 0.273 seconds with exit status 0 (successful).
+ DEBUG [bc9e0042] Running /usr/local/rvm/bin/rvm current as deploy_user@18.212.95.183
+ DEBUG [bc9e0042] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [bc9e0042] 	ruby-3.1.3
+ DEBUG [bc9e0042] Finished in 0.241 seconds with exit status 0 (successful).
+ DEBUG [19ccd46a] Running /usr/local/rvm/bin/rvm 3.1.3 do ruby --version as deploy_user@18.212.95.183
+ DEBUG [19ccd46a] Command: /usr/local/rvm/bin/rvm 3.1.3 do ruby --version
+ DEBUG [19ccd46a] 	ruby 3.1.3p185 (2022-11-24 revision 1a6b16756e) [x86_64-linux]
+ DEBUG [19ccd46a] Finished in 0.398 seconds with exit status 0 (successful).
+  INFO [1ed69057] Running /usr/bin/env mkdir -p /tmp as deploy_user@18.212.95.183
+ DEBUG [1ed69057] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1ed69057] Finished in 0.052 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-62a8347b709a298999d6.sh 0.0%
+  INFO Uploading /tmp/git-ssh-62a8347b709a298999d6.sh 100.0%
+  INFO [bb0eaf1b] Running /usr/bin/env chmod 700 /tmp/git-ssh-62a8347b709a298999d6.sh as deploy_user@18.212.95.183
+ DEBUG [bb0eaf1b] Command: /usr/bin/env chmod 700 /tmp/git-ssh-62a8347b709a298999d6.sh
+  INFO [bb0eaf1b] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [194f4587] Running /usr/bin/env mkdir -p /tmp as deploy_user@18.212.95.183
+ DEBUG [194f4587] Command: /usr/bin/env mkdir -p /tmp
+  INFO [194f4587] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-62a8347b709a298999d6.sh 0.0%
+  INFO Uploading /tmp/git-ssh-62a8347b709a298999d6.sh 100.0%
+  INFO [7c9eecec] Running /usr/bin/env chmod 700 /tmp/git-ssh-62a8347b709a298999d6.sh as deploy_user@18.212.95.183
+ DEBUG [7c9eecec] Command: /usr/bin/env chmod 700 /tmp/git-ssh-62a8347b709a298999d6.sh
+  INFO [7c9eecec] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [66171a72] Running /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD as deploy_user@18.212.95.183
+ DEBUG [66171a72] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-62a8347b709a298999d6.sh" ; /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD )
+ DEBUG [66171a72] 	Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+ DEBUG [66171a72] 	cfeeb0a7f9c8cdae989fb87bda7dec6d54d9b42a	HEAD
+  INFO [66171a72] Finished in 0.393 seconds with exit status 0 (successful).
+  INFO [d578ec1c] Running /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD as deploy_user@18.212.95.183
+ DEBUG [d578ec1c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-62a8347b709a298999d6.sh" ; /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD )
+ DEBUG [d578ec1c] 	cfeeb0a7f9c8cdae989fb87bda7dec6d54d9b42a	HEAD
+  INFO [d578ec1c] Finished in 0.294 seconds with exit status 0 (successful).
+  INFO [0b35a9ff] Running /usr/bin/env mkdir -p /var/www/hello_world/shared /var/www/hello_world/releases as deploy_user@18.212.95.183
+ DEBUG [0b35a9ff] Command: /usr/bin/env mkdir -p /var/www/hello_world/shared /var/www/hello_world/releases
+  INFO [0b35a9ff] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [bf4d3116] Running /usr/bin/env mkdir -p /var/www/hello_world/shared/log /var/www/hello_world/shared/tmp/pids /var/www/hello_world/shared/tmp/cache /var/www/hello_world/shared/tmp/sockets /var/www/hello_world/shared/vendor/bundle /var/www/hello_world/shared/public/system /var/www/hello_world/shared/public/uploads /var/www/hello_world/shared/public/assets as deploy_user@18.212.95.183
+ DEBUG [bf4d3116] Command: /usr/bin/env mkdir -p /var/www/hello_world/shared/log /var/www/hello_world/shared/tmp/pids /var/www/hello_world/shared/tmp/cache /var/www/hello_world/shared/tmp/sockets /var/www/hello_world/shared/vendor/bundle /var/www/hello_world/shared/public/system /var/www/hello_world/shared/public/uploads /var/www/hello_world/shared/public/assets
+  INFO [bf4d3116] Finished in 0.028 seconds with exit status 0 (successful).
+ DEBUG [c6901c9e] Running [ -f /var/www/hello_world/current/REVISION ] as deploy_user@18.212.95.183
+ DEBUG [c6901c9e] Command: [ -f /var/www/hello_world/current/REVISION ]
+ DEBUG [c6901c9e] Finished in 0.050 seconds with exit status 1 (failed).
+ DEBUG [9ccfd1e1] Running [ -f /var/www/hello_world/repo/HEAD ] as deploy_user@18.212.95.183
+ DEBUG [9ccfd1e1] Command: [ -f /var/www/hello_world/repo/HEAD ]
+ DEBUG [9ccfd1e1] Finished in 0.049 seconds with exit status 1 (failed).
+ DEBUG [6f4179d8] Running if test ! -d /var/www/hello_world; then echo "Directory does not exist '/var/www/hello_world'" 1>&2; false; fi as deploy_user@18.212.95.183
+ DEBUG [6f4179d8] Command: if test ! -d /var/www/hello_world; then echo "Directory does not exist '/var/www/hello_world'" 1>&2; false; fi
+ DEBUG [6f4179d8] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [02fe9a99] Running /usr/bin/env git clone --mirror git@github.com:bananatarakota/aws.git /var/www/hello_world/repo as deploy_user@18.212.95.183
+ DEBUG [02fe9a99] Command: cd /var/www/hello_world && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-62a8347b709a298999d6.sh" ; /usr/bin/env git clone --mirror git@github.com:bananatarakota/aws.git /var/www/hello_world/repo )
+ DEBUG [02fe9a99] 	Cloning into bare repository '/var/www/hello_world/repo'...
+  INFO [02fe9a99] Finished in 0.433 seconds with exit status 0 (successful).
+ DEBUG [cc0cf685] Running [ -f /var/www/hello_world/repo/HEAD ] as deploy_user@18.212.95.183
+ DEBUG [cc0cf685] Command: [ -f /var/www/hello_world/repo/HEAD ]
+ DEBUG [cc0cf685] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/hello_world/repo
+ DEBUG [464c6166] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@18.212.95.183
+ DEBUG [464c6166] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [464c6166] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [2a7d5939] Running /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git as deploy_user@18.212.95.183
+ DEBUG [2a7d5939] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-62a8347b709a298999d6.sh" ; /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git )
+  INFO [2a7d5939] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [5e0cd460] Running /usr/bin/env git remote update --prune as deploy_user@18.212.95.183
+ DEBUG [5e0cd460] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-62a8347b709a298999d6.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [5e0cd460] 	Fetching origin
+  INFO [5e0cd460] Finished in 0.349 seconds with exit status 0 (successful).
+ DEBUG [4b4dff1e] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@18.212.95.183
+ DEBUG [4b4dff1e] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [4b4dff1e] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [0bc619f5] Running /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git as deploy_user@18.212.95.183
+ DEBUG [0bc619f5] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-62a8347b709a298999d6.sh" ; /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git )
+  INFO [0bc619f5] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [f238b4ea] Running /usr/bin/env git remote update --prune as deploy_user@18.212.95.183
+ DEBUG [f238b4ea] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-62a8347b709a298999d6.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [f238b4ea] 	Fetching origin
+  INFO [f238b4ea] Finished in 0.333 seconds with exit status 0 (successful).
+ DEBUG [3689c33a] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@18.212.95.183
+ DEBUG [3689c33a] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [3689c33a] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [930c3778] Running /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315054433 as deploy_user@18.212.95.183
+ DEBUG [930c3778] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-62a8347b709a298999d6.sh" ; /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315054433 )
+  INFO [930c3778] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [efd0f7cf] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/hello_world/releases/20240315054433 as deploy_user@18.212.95.183
+ DEBUG [efd0f7cf] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-62a8347b709a298999d6.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/hello_world/releases/20240315054433 )
+ DEBUG [efd0f7cf] 	fatal: not a valid object name: master
+ DEBUG [efd0f7cf] 	tar: 
+ DEBUG [efd0f7cf] 	This does not look like a tar archive
+ DEBUG [efd0f7cf] 	
+ DEBUG [efd0f7cf] 	tar: 
+ DEBUG [efd0f7cf] 	Exiting with failure status due to previous errors
+ DEBUG [efd0f7cf] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2024-03-15 05:47:34 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d1461916] Running /usr/bin/env which passenger as deploy_user@18.212.95.183
+ DEBUG [d1461916] Command: /usr/bin/env which passenger
+ DEBUG [d1461916] 	/usr/bin/passenger
+ DEBUG [d1461916] Finished in 0.748 seconds with exit status 0 (successful).
+ DEBUG [2dbad77e] Running [ -d ~/.rvm ] as deploy_user@18.212.95.183
+ DEBUG [2dbad77e] Command: [ -d ~/.rvm ]
+ DEBUG [2dbad77e] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [1d29d979] Running [ -d /usr/local/rvm ] as deploy_user@18.212.95.183
+ DEBUG [1d29d979] Command: [ -d /usr/local/rvm ]
+ DEBUG [1d29d979] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [5d1c1cbd] Running /usr/local/rvm/bin/rvm version as deploy_user@18.212.95.183
+ DEBUG [5d1c1cbd] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [5d1c1cbd] 	rvm 1.29.12 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [5d1c1cbd] Finished in 0.248 seconds with exit status 0 (successful).
+ DEBUG [ac58137b] Running /usr/local/rvm/bin/rvm current as deploy_user@18.212.95.183
+ DEBUG [ac58137b] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [ac58137b] 	ruby-3.1.3
+ DEBUG [ac58137b] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG [4c8c7fb2] Running /usr/local/rvm/bin/rvm 3.1.3 do ruby --version as deploy_user@18.212.95.183
+ DEBUG [4c8c7fb2] Command: /usr/local/rvm/bin/rvm 3.1.3 do ruby --version
+ DEBUG [4c8c7fb2] 	ruby 3.1.3p185 (2022-11-24 revision 1a6b16756e) [x86_64-linux]
+ DEBUG [4c8c7fb2] Finished in 0.393 seconds with exit status 0 (successful).
+  INFO [676faf0c] Running /usr/bin/env mkdir -p /tmp as deploy_user@18.212.95.183
+ DEBUG [676faf0c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [676faf0c] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-87929b431f2e29215f70.sh 0.0%
+  INFO Uploading /tmp/git-ssh-87929b431f2e29215f70.sh 100.0%
+  INFO [7d79f44f] Running /usr/bin/env chmod 700 /tmp/git-ssh-87929b431f2e29215f70.sh as deploy_user@18.212.95.183
+ DEBUG [7d79f44f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-87929b431f2e29215f70.sh
+  INFO [7d79f44f] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [74978868] Running /usr/bin/env mkdir -p /tmp as deploy_user@18.212.95.183
+ DEBUG [74978868] Command: /usr/bin/env mkdir -p /tmp
+  INFO [74978868] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-87929b431f2e29215f70.sh 0.0%
+  INFO Uploading /tmp/git-ssh-87929b431f2e29215f70.sh 100.0%
+  INFO [bc9405fa] Running /usr/bin/env chmod 700 /tmp/git-ssh-87929b431f2e29215f70.sh as deploy_user@18.212.95.183
+ DEBUG [bc9405fa] Command: /usr/bin/env chmod 700 /tmp/git-ssh-87929b431f2e29215f70.sh
+  INFO [bc9405fa] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [132d7642] Running /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD as deploy_user@18.212.95.183
+ DEBUG [132d7642] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-87929b431f2e29215f70.sh" ; /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD )
+ DEBUG [132d7642] 	cfeeb0a7f9c8cdae989fb87bda7dec6d54d9b42a	HEAD
+  INFO [132d7642] Finished in 0.345 seconds with exit status 0 (successful).
+  INFO [f621204f] Running /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD as deploy_user@18.212.95.183
+ DEBUG [f621204f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-87929b431f2e29215f70.sh" ; /usr/bin/env git ls-remote git@github.com:bananatarakota/aws.git HEAD )
+ DEBUG [f621204f] 	cfeeb0a7f9c8cdae989fb87bda7dec6d54d9b42a	HEAD
+  INFO [f621204f] Finished in 0.324 seconds with exit status 0 (successful).
+  INFO [48b13647] Running /usr/bin/env mkdir -p /var/www/hello_world/shared /var/www/hello_world/releases as deploy_user@18.212.95.183
+ DEBUG [48b13647] Command: /usr/bin/env mkdir -p /var/www/hello_world/shared /var/www/hello_world/releases
+  INFO [48b13647] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [718e922a] Running /usr/bin/env mkdir -p /var/www/hello_world/shared/log /var/www/hello_world/shared/tmp/pids /var/www/hello_world/shared/tmp/cache /var/www/hello_world/shared/tmp/sockets /var/www/hello_world/shared/vendor/bundle /var/www/hello_world/shared/public/system /var/www/hello_world/shared/public/uploads /var/www/hello_world/shared/public/assets as deploy_user@18.212.95.183
+ DEBUG [718e922a] Command: /usr/bin/env mkdir -p /var/www/hello_world/shared/log /var/www/hello_world/shared/tmp/pids /var/www/hello_world/shared/tmp/cache /var/www/hello_world/shared/tmp/sockets /var/www/hello_world/shared/vendor/bundle /var/www/hello_world/shared/public/system /var/www/hello_world/shared/public/uploads /var/www/hello_world/shared/public/assets
+  INFO [718e922a] Finished in 0.036 seconds with exit status 0 (successful).
+ DEBUG [f5d92614] Running [ -f /var/www/hello_world/current/REVISION ] as deploy_user@18.212.95.183
+ DEBUG [f5d92614] Command: [ -f /var/www/hello_world/current/REVISION ]
+ DEBUG [f5d92614] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [09b3881a] Running [ -f /var/www/hello_world/repo/HEAD ] as deploy_user@18.212.95.183
+ DEBUG [09b3881a] Command: [ -f /var/www/hello_world/repo/HEAD ]
+ DEBUG [09b3881a] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/hello_world/repo
+ DEBUG [6b68799f] Running [ -f /var/www/hello_world/repo/HEAD ] as deploy_user@18.212.95.183
+ DEBUG [6b68799f] Command: [ -f /var/www/hello_world/repo/HEAD ]
+ DEBUG [6b68799f] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/hello_world/repo
+ DEBUG [86d73ecd] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@18.212.95.183
+ DEBUG [86d73ecd] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [86d73ecd] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [2cbdb639] Running /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git as deploy_user@18.212.95.183
+ DEBUG [2cbdb639] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-87929b431f2e29215f70.sh" ; /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git )
+  INFO [2cbdb639] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [a77c6370] Running /usr/bin/env git remote update --prune as deploy_user@18.212.95.183
+ DEBUG [a77c6370] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-87929b431f2e29215f70.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [a77c6370] 	Fetching origin
+  INFO [a77c6370] Finished in 0.338 seconds with exit status 0 (successful).
+ DEBUG [673cae35] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@18.212.95.183
+ DEBUG [673cae35] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [673cae35] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [2574200d] Running /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git as deploy_user@18.212.95.183
+ DEBUG [2574200d] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-87929b431f2e29215f70.sh" ; /usr/bin/env git remote set-url origin git@github.com:bananatarakota/aws.git )
+  INFO [2574200d] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [43184fd5] Running /usr/bin/env git remote update --prune as deploy_user@18.212.95.183
+ DEBUG [43184fd5] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-87929b431f2e29215f70.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [43184fd5] 	Fetching origin
+  INFO [43184fd5] Finished in 0.341 seconds with exit status 0 (successful).
+ DEBUG [322d7253] Running if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi as deploy_user@18.212.95.183
+ DEBUG [322d7253] Command: if test ! -d /var/www/hello_world/repo; then echo "Directory does not exist '/var/www/hello_world/repo'" 1>&2; false; fi
+ DEBUG [322d7253] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [d529476a] Running /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315054737 as deploy_user@18.212.95.183
+ DEBUG [d529476a] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-87929b431f2e29215f70.sh" ; /usr/bin/env mkdir -p /var/www/hello_world/releases/20240315054737 )
+  INFO [d529476a] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [5e527e1f] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/hello_world/releases/20240315054737 as deploy_user@18.212.95.183
+ DEBUG [5e527e1f] Command: cd /var/www/hello_world/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-87929b431f2e29215f70.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/hello_world/releases/20240315054737 )
+ DEBUG [5e527e1f] 	fatal: not a valid object name: master
+ DEBUG [5e527e1f] 	tar: 
+ DEBUG [5e527e1f] 	This does not look like a tar archive
+ DEBUG [5e527e1f] 	
+ DEBUG [5e527e1f] 	tar: 
+ DEBUG [5e527e1f] 	Exiting with failure status due to previous errors
+ DEBUG [5e527e1f] 	
