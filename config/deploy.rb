@@ -4,6 +4,9 @@ lock "~> 3.18.1"
 set :application, "my_app_name"
 set :repo_url, "git@example.com:me/my_repo.git"
 
+set :linked_files, %w[
+  config/database.yml
+]
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 

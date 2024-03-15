@@ -46,8 +46,29 @@ require "capistrano/bundler"
 require "capistrano/rails/assets"
 require "capistrano/rails/migrations"
 require "capistrano/passenger"
-#require 'capistrano/figaro_yml'
-require 'capistrano3-puma'
-  #  install_plugin Capistrano::Puma  # Default puma tasks
+#require 'capistrano/figaro_yml'\
+
+#require 'capistrano/rbenv_install'
+#require 'capistrano/rbenv'
+
+#require 'capistrano/drupal-deploy'
+
+require 'capistrano/puma'
+install_plugin Capistrano::Puma
+install_plugin Capistrano::Puma::Workers
+#require 'capistrano/sidekiq'
+install_plugin Capistrano::Puma::Systemd
+
+   #install_plugin Capistrano::Puma, load_hooks: false # Default puma tasks
    # install_plugin Capistrano::Puma::Systemd
+
+# .
+# ..
+# ...
+
+# Important: Puma configuration should come after rvm or rbenv
+
+install_plugin Capistrano::Puma
+install_plugin Capistrano::Puma::Systemd
+   
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }

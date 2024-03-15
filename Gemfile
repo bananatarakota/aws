@@ -12,8 +12,8 @@ gem "sprockets-rails"
 gem "pg", "~> 1.1"
 
 # Use the Puma web server [https://github.com/puma/puma]
-#gem "puma", ">= 5.0"
-gem "puma", "5.5.2"
+gem "puma", ">= 5.0"
+#gem "puma", "4.3"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
@@ -49,15 +49,27 @@ gem "bootsnap", require: false
 gem 'capistrano'
 gem 'capistrano-bundler'
 gem 'capistrano-passenger', '>= 0.1.1'
-gem 'capistrano-rails'
+#gem 'capistrano-rails'
 gem 'capistrano-rvm'
+
+
+#gem 'capistrano', '~> 3.2.1'
+gem 'capistrano-rbenv', '~> 2.0' # required
+gem 'capistrano-rbenv-install', '~> 1.2.0'
+
 #gem 'capistrano-figaro-yml', '~> 1.0.2'
 
 gem "bcrypt_pbkdf", require: false
 gem "ed25519", require: false
-gem 'capistrano3-puma', github: "seuros/capistrano-puma"
-gem "dotenv"
+#gem "capistrano3-puma", github: "seuros/capistrano-puma"
 
+gem 'capistrano-rails', '~> 1.6.1', require: false
+  gem 'capistrano3-puma', '~> 5.2.0', require: false
+gem "dotenv"
+gem 'psych', '< 4'
+gem 'webpacker', '~>3.0'
+
+#gem 'bcrypt-ruby', '~> 3.2.2', :require => "bcrypt"
 
 
 # 'pundit', '~> 2.3.1'
