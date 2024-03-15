@@ -56,6 +56,11 @@ gem 'capistrano-figaro-yml', '~> 1.0.2'
 gem "bcrypt_pbkdf", require: false
 gem "ed25519", require: false
 
+# 'pundit', '~> 2.3.1'
+gem 'pundit', git: 'https://github.com/varvet/pundit.git', ref: '5b22078'
+
+gem 'figaro'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
